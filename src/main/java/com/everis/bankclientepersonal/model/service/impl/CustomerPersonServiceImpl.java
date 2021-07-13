@@ -27,7 +27,7 @@ public class CustomerPersonServiceImpl implements CustomerPersonService {
 	}
 
 	@Override
-	public Mono<CustomerPersonDoc> findAllId(String id) {
+	public Mono<CustomerPersonDoc> findById(String id) {
 		return customerPersonDao.findById(id);
 	}
 
@@ -47,7 +47,7 @@ public class CustomerPersonServiceImpl implements CustomerPersonService {
 	}
 
 	@Override
-	public Mono<CategoryDoc> findAllIdCategory(String id) {
+	public Mono<CategoryDoc> findByIdCategory(String id) {
 		return categoryDao.findById(id);
 	}
 

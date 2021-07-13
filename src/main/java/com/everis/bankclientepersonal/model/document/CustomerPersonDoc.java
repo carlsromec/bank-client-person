@@ -26,7 +26,7 @@ public class CustomerPersonDoc {
 	@NotNull
 	private String firstname;
 	@NotNull
-	private String dicetion;
+	private String direction;
 	@NotNull
 	private String telephone;
 	
@@ -34,12 +34,12 @@ public class CustomerPersonDoc {
 	private CategoryDoc categoryDoc;
 
 	public CustomerPersonDoc(@NotNull String dni, @NotNull String lastname, @NotNull String firstname,
-			@NotNull String dicetion, @NotNull String telephone, @Valid CategoryDoc categoryDoc) {
+			@NotNull String direction, @NotNull String telephone, @Valid CategoryDoc categoryDoc) {
 		super();
 		this.dni = dni;
 		this.lastname = lastname;
 		this.firstname = firstname;
-		this.dicetion = dicetion;
+		this.direction = direction;
 		this.telephone = telephone;
 		this.categoryDoc = categoryDoc;
 	}
